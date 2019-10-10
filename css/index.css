@@ -170,22 +170,30 @@ img {
 }
 .navi {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 2% 0;
+}
+.navi div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navi h1 {
-  width: 20%;
+  width: auto;
 }
 .navi nav {
-  width: 80%;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 1.6rem;
 }
 .navi a {
   text-decoration: none;
-  color: inherit;
-  width: 100%;
-  padding: 1%;
+  color: #212529;
+  padding: 2.5%;
 }
 .footer {
   width: 100%;

@@ -1,19 +1,29 @@
 // Navigation Styles here
 .navi{
-    .displayJA(space-evenly, center);
+    .displayJA(center, center);
     width: 100%;
-    border-bottom: 2px dashed silver;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 2% 0;
 
+
+
+    div{
+        width:50%;
+        .displayJA(center, center)
+    }
     h1{
-        width: 20%;
+        width: auto;
     }
     nav{
-        width:80%;
+        margin-left: 10%;
+        width:100%;
+        font-size: 1.6rem;
+        
     }
     a{
         text-decoration: none;
-        color: inherit;
-        width: 100%;
-        padding: 1%;
+        color: @font-color;
+        // width: 100%;
+        padding: 2.5%;
     }
 }
