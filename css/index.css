@@ -247,6 +247,17 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section div {
+    width: 100% !important;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -255,12 +266,34 @@ img {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100% !important;
+    padding: 0;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .home .inverse-content div {
+    width: 100% !important;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -270,6 +303,11 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -277,11 +315,22 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .content-pick .btn {
   display: block;
@@ -299,6 +348,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 5%;
+  }
 }
 .home .content-pick .destination h4 {
   text-align: center;
