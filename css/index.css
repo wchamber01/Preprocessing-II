@@ -132,6 +132,9 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  margin: 0 5%;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -176,11 +179,22 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   padding: 2% 0;
 }
+@media (max-width: 500px) {
+  .navi {
+    flex-direction: column;
+  }
+}
 .navi div {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navi div {
+    width: 100%;
+    margin: 0;
+  }
 }
 .navi h1 {
   width: auto;
@@ -190,10 +204,25 @@ img {
   width: 100%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .navi nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
 .navi a {
   text-decoration: none;
   color: #212529;
   padding: 2.5%;
+}
+@media (max-width: 500px) {
+  .navi a {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
 }
 .footer {
   width: 100%;
