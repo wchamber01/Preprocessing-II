@@ -1,1 +1,48 @@
 // Navigation Styles here
+.navi{
+    .displayJA(center, center);
+        width: 100%;
+        border-bottom: 2px dashed @navigation-border;
+        padding: 2% 0;
+
+        @media @phone{
+            flex-direction: column;
+        }
+
+    div{
+        width:50%;
+        .displayJA(center, center);
+        
+        @media @phone{
+            width: 100%;
+            margin: 0;
+        };
+    }
+        
+    h1{
+        width: auto;
+    }
+    nav{
+        margin-left: 10%;
+        width:100%;
+        font-size: 1.6rem;
+        
+        @media @phone{
+            .displayJA(center, center);
+            margin:0;
+            
+            
+        }
+    }
+    a{
+        text-decoration: none;
+        color: @font-color;
+        padding: 2.5%;
+
+        @media @phone{
+            text-align: center;
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

@@ -1,1 +1,17 @@
 // Mixins in here
+.displayJA(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@button-bg, @width: 100%, @main-bg ){
+    display: block;
+    background-color: @button-bg;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 15px;
+    color: @main-bg;
+}
